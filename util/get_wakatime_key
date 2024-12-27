@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+import configparser
+import os
+
+config = configparser.RawConfigParser(default_section='settings', strict=False)
+cfg_path = os.path.expanduser("~/.wakatime.cfg")
+
+if os.path.exists(cfg_path) is not True:
+    exit()
+else:
+    config.read(cfg_path)
+
+print(*[k for i, k in config.items(config.default_section) if i == 'api_key'])

@@ -6,7 +6,7 @@ return {
             sync_install = true,
             ignore_install = {},
             auto_install = true,
-            ensure_installed = {},
+            ensure_installed = { 'markdown', 'lua', 'vimdoc' },
             highlight = {
                 enable = true,
                 additional_vim_regex_highlighting = false,
