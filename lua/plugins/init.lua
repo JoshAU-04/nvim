@@ -9,5 +9,8 @@ return {
 	{ import = "plugins.spec.telescope" },
 	{ import = "plugins.spec.treesitter" },
 	{ import = "plugins.spec.lualine" },
-	{ import = "plugins.spec.lspconfig" }
+	{ import = "plugins.spec.lspconfig" },
+	{ import = "plugins.spec.peek" },
+	{ import = "plugins.spec.markdown" },
+	{ import = "plugins.spec.headlines" }
 }
